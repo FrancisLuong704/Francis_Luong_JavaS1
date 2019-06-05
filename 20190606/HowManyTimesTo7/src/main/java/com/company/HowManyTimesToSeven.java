@@ -16,10 +16,10 @@ public class HowManyTimesToSeven {
             dice2 = rand.nextInt(6) + 1;
             int sum = dice1 + dice2;
 
-            if (sum == 7 && numberOfSevens == 1) {
+            if (sum == 7 && numberOfSevens == 0) {
                 System.out.println("it took " + i + " rolls to get to your first 7!");
                 numberOfSevens++;
-            } else if(sum == 7 && numberOfSevens != 1) {
+            } else if(sum == 7 && numberOfSevens != 0) {
                 numberOfSevens++;
             }
         }
